@@ -1,0 +1,23 @@
+.body{
+    width: 800px;
+    float: left;
+    padding: 40px;
+    background-color: #C9EEE6;
+    border-radius: 50px;
+}
+
+.input_div{
+    display: flex;
+    flex-direction:column;
+    padding: 5px;
+}
+  
+.input_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+textarea{
+    height: 80px;
+}

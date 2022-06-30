@@ -1,0 +1,71 @@
+<app-header></app-header>
+<app-aside></app-aside>
+
+<div class="container-fluid" style="padding: 20px 50px;">
+    <div class="body">
+        <h1>Nueva mascota en adopción</h1>
+        
+        <form (ngSubmit)="enviar()" #form="ngForm">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" name="nombre" [(ngModel)]="nombre">
+            </div>
+            <br>
+
+            <div class="input_container">
+                <div class="input_div">
+                  <label for="nacimiento"><i class="form-label"></i>Nacimiento</label>
+                  <input type="date" name="nacimiento" class="form-control" [(ngModel)]="nacimiento">
+                </div>
+                <div class="input_div">
+                    <label for="edad"><i class="form-label"></i>Edad</label>
+                    <input type="number" name="edad" class="form-control" [(ngModel)]="edad">
+                </div>
+            </div>
+
+            <div class="input_container">
+                <div class="input_div">
+                  <label for="raza"><i class="form-label"></i>Raza</label>
+                  <input type="text" name="raza" class="form-control" [(ngModel)]="raza">
+                </div>
+                <div class="input_div">
+                    <label for="tamanio"><i class="form-label"></i>Tamaño</label>
+                    <input type="text" name="tamanio" class="form-control" [(ngModel)]="tamanio">
+                </div>
+            </div>
+
+            <div class="input_container">
+                <div class="input_div">
+                  <label for="sexo"><i class="form-label"></i>Sexo</label>
+                  <select class="form-select" aria-label="Default select example" name="sexo" [(ngModel)]="sexo">
+                    <option value="h">Hembra</option>
+                    <option value="m">Macho</option>
+                  </select>
+                </div>
+                <div class="input_div">
+                    <label for="peso"><i class="form-label"></i>Peso(Kg)</label>
+                    <input type="number" name="peso" class="form-control" [(ngModel)]="peso">
+                </div>
+            </div>
+
+            <div class="input_container">
+              <div class="input_div">
+                <label for="color"><i class="form-label"></i>Color</label>
+                <input type="text" name="color" class="form-control" [(ngModel)]="color">
+              </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="imagen" style="padding: 5px;"><i class="form-label"></i>Imagen</label>
+                <input type="text" class="form-control" name="imagen" placeholder="Inserte link de imagen" [(ngModel)]="imagen">
+            </div>
+            <div class="mb-3">
+                <label for="descripcion"><i class="form-label"></i>Descripción</label>
+                <textarea type="text" class="form-control" name="descripcion" [(ngModel)]="descripcion"></textarea>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-outline-success">Guardar mascota</button>
+          </form>
+    </div>
+</div>
+

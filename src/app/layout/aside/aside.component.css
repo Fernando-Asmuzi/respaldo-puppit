@@ -1,0 +1,24 @@
+
+#aside_container{
+    text-align: center;
+    width: 350px;
+    padding: 20px;
+    float: right;
+   
+}
+
+#aside_menu_container{
+    border: 1px solid #6C7775;
+    border-radius: 20px;
+    width: 300px;
+    padding: 10px;
+}
+
+.btn_menu{
+    width: 280px;
+    background-color: #C9EEE6;
+    border: none;
+    border-radius: 10px;
+    height: 60px;
+    font-size: large;
+}
